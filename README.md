@@ -18,4 +18,14 @@ What went really well and what could have gone better?
 
 ## References
 
-- list your external
+<!-- - list your external ones -->
+
+- Ross Fletcher (classmate) helped with finding image addresses (via F12) and ....
+
+<!-- <body>
+  <h1>week 1 assignment</h1>
+    <!-- this is where you add your website structure -->
+
+    <!-- if your images do not show in your live page, add the relative (""./" as above in style link") path to your image src  -->
+    <img src="./image..." alt=""/>
+    </body> -->
