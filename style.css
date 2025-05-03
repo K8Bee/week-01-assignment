@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  outline: 1px, solid, red;
 }
 
 header {
@@ -20,10 +22,24 @@ nav {
   background-color: slateblue;
 }
 
+nav-link {
+  background-color: azure;
+}
+
 main {
   background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  color: whitesmoke;
+}
+
+section {
+  background-color: aquamarine;
+}
+
+h2 {
+  background-color: aqua;
+}
+
+h3 {
+  background-color: aqua;
 }
 
 footer {
