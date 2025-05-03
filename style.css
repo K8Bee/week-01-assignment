@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: blue;
+  display: inline-block;
 }
 
 h1 {
@@ -19,7 +20,10 @@ h1 {
 }
 
 nav {
-  background-color: slateblue;
+  background-color: transparent;
+  display: inline;
+  z-index: 1000;
+  position: relative;
 }
 
 .nav-link {
@@ -42,8 +46,17 @@ h3 {
   background-color: lightseagreen;
 }
 
+.section {
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  background-size: 100vw 100vh;
+  /* background-clip: border-box; */
+}
+
 #section1 {
-  background-image: url("https://images.unsplash.com/photo-1518365050014-70fe7232897f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9ja2V0fGVufDB8fDB8fHwy");
+  background-image: url("https://spacey-kappa.vercel.app/assets/galaxy-5803c9f1.jpg");
 }
 
 #section2 {
@@ -52,6 +65,21 @@ h3 {
 
 #section3 {
   background-image: url("https://images.unsplash.com/photo-1537420327992-d6e192287183?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2V8ZW58MHx8MHx8fDI%3D");
+}
+
+.link2 {
+  color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  background-color: transparent;
+}
+
+.nav-link-up {
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  background-color: transparent;
 }
 
 footer {
