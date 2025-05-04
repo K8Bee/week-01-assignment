@@ -1,13 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
   color: white;
   font-family: sans-serif;
   outline: 1px, solid, red;
+  /* could have the font upper case setting here but note the footer is in lower case and upper */
 }
 
 header {
@@ -15,73 +16,60 @@ header {
   display: inline-block;
 }
 
-h1 {
-  background-color: aqua;
+.navcontainer {
+  font-size: xx-small;
+  position: absolute;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  flex-flow: row nowrap;
+  /* shorthand for flex-direction and flex-wrap properties */
+  justify-content: flex-start safe;
+  /* Note that that browser support for these values is nuanced. For example, space-between never got support from some versions of Edge, and start/end/left/right aren’t in Chrome yet. MDN has detailed charts. The safest values are flex-start, flex-end, and center. */
+  /* or center safe? */
+  align-items: center safe;
+  /* or stretch? safe */
+  gap: 10px;
+  /* gap, row-gap, column-gap. The gap property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges. The behavior could be thought of as a minimum gutter, as if the gutter is bigger somehow (because of something like justify-content: space-between;) then the gap will only take effect if that space would end up smaller. */
 }
 
-nav {
+.h1logo {
   background-color: transparent;
-  display: inline;
-  z-index: 1000;
-  position: relative;
-}
-
-.nav-link {
-  background-color: azure;
-}
-
-main {
   background-color: black;
+  font-size: x-small;
+  font-weight: bold;
+  order: -5;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto; */
+  flex: 1 1 auto;
+  /* flex is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional.It is recommended that you use this shorthand property rather than set the individual properties. The shorthand sets the other values intelligently. */
+  /* align-self: "..."; */
+  /* This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items. */
+}
+.divcontainer1 {
+  background-image: url(./topimage.png);
+  display: flex;
 }
 
-section {
-  background-color: aquamarine;
+.divbox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
-h2 {
-  background-color: lightblue;
+.sectioncontainer {
+  background-image: url(./middleimage.png);
+  display: flex;
 }
 
-h3 {
-  background-color: lightseagreen;
+.sectionbox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
-.section {
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-attachment: fixed;
-  background-origin: padding-box;
-  background-size: 100vw 100vh;
-  /* background-clip: border-box; */
-}
-
-#section1 {
-  background-image: url("https://spacey-kappa.vercel.app/assets/galaxy-5803c9f1.jpg");
-}
-
-#section2 {
-  background-image: url("https://images.unsplash.com/photo-1610296669228-602fa827fc1f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BhY2V8ZW58MHx8MHx8fDI%3D");
-}
-
-#section3 {
-  background-image: url("https://images.unsplash.com/photo-1537420327992-d6e192287183?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2V8ZW58MHx8MHx8fDI%3D");
-}
-
-.link2 {
-  color: white;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-  background-color: transparent;
-}
-
-.nav-link-up {
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-  background-color: transparent;
-}
-
-footer {
-  background-color: navy;
+.divcontainer2 {
+  background-image: url(./bottomimage.png);
+  display: flex;
 }
