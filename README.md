@@ -44,7 +44,9 @@ This is a splash page for my week one assignment in the bootcamp.
 
 <!-- - list your external ones -->
 
-- Ross F (classmate) helped with finding image addresses (via inspect) and ....
+- Ross F (classmate) helped with finding image addresses (via inspect)
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Resizing_background_images
 
 ## Tips
 
